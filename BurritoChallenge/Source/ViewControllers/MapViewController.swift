@@ -53,4 +53,14 @@ extension MapViewController: MKMapViewDelegate {
         annotationView.markerTintColor = UIColor(red: 110/255, green: 0, blue: 1, alpha: 1.0)
         return annotationView
     }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard
+            let encodedString = burritoPlace.address.replacingOccurrences(of: ",", with: "").addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+            let url = URL(string: "http://maps.apple.com/?daddr=\(encodedString)"),
+            UIApplication.shared.canOpenURL(url)
+        else { return }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 }
