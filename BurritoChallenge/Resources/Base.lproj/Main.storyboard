@@ -14,51 +14,72 @@
         <scene sceneID="sCy-79-aZg">
             <objects>
                 <tableViewController storyboardIdentifier="BurritoTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SYJ-D3-iTc" customClass="BurritoTableViewController" customModule="BurritoChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mfu-WQ-d0E">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mfu-WQ-d0E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="burritoPlace" rowHeight="80" id="tgY-oH-3sX" customClass="BurritoPlaceTableViewCell" customModule="BurritoChallenge" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="burritoPlace" rowHeight="130" id="tgY-oH-3sX" customClass="BurritoPlaceTableViewCell" customModule="BurritoChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tgY-oH-3sX" id="Zme-jp-c9c">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="wOg-wR-mAf">
-                                            <rect key="frame" x="20" y="10" width="374" height="59.5"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGh-dJ-VOj">
+                                            <rect key="frame" x="10" y="10" width="394" height="110"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Burrito Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yga-yN-Qn2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="112" height="19.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <color key="textColor" red="0.3820931613445282" green="0.073992498219013214" blue="0.78828233480453491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-WI-Mzm">
-                                                    <rect key="frame" x="0.0" y="19.5" width="62.5" height="19.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                    <color key="textColor" red="0.50981110334396362" green="0.50979107618331909" blue="0.50980466604232788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNM-G7-zMK">
-                                                    <rect key="frame" x="0.0" y="39" width="39.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.666675865650177" green="0.66665023565292358" blue="0.66666758060455322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="wOg-wR-mAf">
+                                                    <rect key="frame" x="15" y="15" width="349" height="80"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Burrito Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yga-yN-Qn2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="112" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" red="0.3820931613445282" green="0.073992498219013214" blue="0.78828233480453491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-WI-Mzm">
+                                                            <rect key="frame" x="0.0" y="31" width="62.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <color key="textColor" red="0.50981110334396362" green="0.50979107618331909" blue="0.50980466604232788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNM-G7-zMK">
+                                                            <rect key="frame" x="0.0" y="59.5" width="39.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.666675865650177" green="0.66665023565292358" blue="0.66666758060455322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ly5-TW-w6O">
+                                                    <rect key="frame" x="367.5" y="43" width="16.5" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                        </stackView>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="wOg-wR-mAf" secondAttribute="trailing" constant="30" id="Cp7-JL-33y"/>
+                                                <constraint firstItem="wOg-wR-mAf" firstAttribute="top" secondItem="YGh-dJ-VOj" secondAttribute="top" constant="15" id="L5V-Sp-emj"/>
+                                                <constraint firstItem="Ly5-TW-w6O" firstAttribute="centerY" secondItem="YGh-dJ-VOj" secondAttribute="centerY" id="Rkc-LZ-pwP"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ly5-TW-w6O" secondAttribute="trailing" constant="10" id="ZQs-Y2-CkW"/>
+                                                <constraint firstItem="wOg-wR-mAf" firstAttribute="leading" secondItem="YGh-dJ-VOj" secondAttribute="leading" constant="15" id="fq8-hY-dSz"/>
+                                                <constraint firstAttribute="bottom" secondItem="wOg-wR-mAf" secondAttribute="bottom" constant="15" id="vZB-ek-sv3"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="wOg-wR-mAf" secondAttribute="trailing" constant="20" id="BR1-dP-o2k"/>
-                                        <constraint firstAttribute="bottom" secondItem="wOg-wR-mAf" secondAttribute="bottom" constant="10" id="ErY-Yc-SKq"/>
-                                        <constraint firstItem="wOg-wR-mAf" firstAttribute="top" secondItem="Zme-jp-c9c" secondAttribute="top" constant="10" id="V6r-fU-vhS"/>
-                                        <constraint firstItem="wOg-wR-mAf" firstAttribute="leading" secondItem="Zme-jp-c9c" secondAttribute="leading" constant="20" id="WuL-QH-fjh"/>
+                                        <constraint firstItem="YGh-dJ-VOj" firstAttribute="leading" secondItem="Zme-jp-c9c" secondAttribute="leading" constant="10" id="3cY-J5-Iuy"/>
+                                        <constraint firstAttribute="bottom" secondItem="YGh-dJ-VOj" secondAttribute="bottom" constant="10" id="7Io-x5-wGO"/>
+                                        <constraint firstAttribute="trailing" secondItem="YGh-dJ-VOj" secondAttribute="trailing" constant="10" id="9zP-MQ-Jad"/>
+                                        <constraint firstItem="YGh-dJ-VOj" firstAttribute="top" secondItem="Zme-jp-c9c" secondAttribute="top" constant="10" id="CzB-S8-fC5"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="7Ng-WI-Mzm" id="Vsj-SL-iEN"/>
+                                    <outlet property="cardBackground" destination="YGh-dJ-VOj" id="aZk-m7-jU0"/>
                                     <outlet property="placeNameLabel" destination="yga-yN-Qn2" id="j33-QP-Su2"/>
                                     <outlet property="statsLabel" destination="tNM-G7-zMK" id="bTA-VU-KCX"/>
                                 </connections>

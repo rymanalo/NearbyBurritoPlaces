@@ -44,7 +44,6 @@ class BurritoTableViewController: UITableViewController {
             let burritoPlace = burritoPlaces[index]
             
             cell.burritoPlace = burritoPlace
-            cell.accessoryType = .disclosureIndicator
             cell.selectionStyle = .none
             
             return cell
